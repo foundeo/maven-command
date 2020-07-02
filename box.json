@@ -1,0 +1,42 @@
+{
+    "name":"maven-command",
+    "version":"0.0.0",
+    "author":"Foundeo Inc.",
+    "location":"foundeo/maven-command#v0.0.0",
+    "homepage":"https://foundeo.com/",
+    "documentation":"https://github.com/foundeo/maven-command",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/foundeo/maven-command"
+    },
+    "bugs":"https://github.com/foundeo/maven-command/issues",
+    "slug":"maven-command",
+    "shortDescription":"A CommandBox comand for installing jar files from maven repository.",
+    "type":"commandbox-modules",
+    "keywords":[
+        "maven",
+        "mvn",
+        "jar",
+        "jars"
+    ],
+    "private":false,
+    "license":[
+        {
+            "type":"MIT",
+            "URL":"https://github.com/foundeo/maven-command"
+        }
+    ],
+    "dependencies":{
+        "maven-client":"^0.0.2"
+    },
+    "devDependencies":{},
+    "installPaths":{
+        "maven-client":"modules/maven-client/"
+    },
+    "scripts":{
+        "postVersion":"package set location='foundeo/maven-command#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && git push --tags"
+    },
+    "ignore":[]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project>
+	<dependencies>
+		<dependency>
+		    <groupId>org.mindrot</groupId>
+		    <artifactId>jbcrypt</artifactId>
+		    <version>0.4</version>
+		</dependency>
+	</dependencies>
+</project>
