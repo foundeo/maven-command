@@ -1,8 +1,8 @@
 {
     "name":"maven-command",
-    "version":"0.0.0",
+    "version":"0.0.1",
     "author":"Foundeo Inc.",
-    "location":"foundeo/maven-command#v0.0.0",
+    "location":"foundeo/maven-command#v0.0.1",
     "homepage":"https://foundeo.com/",
     "documentation":"https://github.com/foundeo/maven-command",
     "repository":{
