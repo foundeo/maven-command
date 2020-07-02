@@ -46,7 +46,9 @@ component extends="commandbox.system.BaseCommand" excludeFromHelp=false {
 			depFiles = {};
 			for (dep in deps) {
 				if (!len(dep.version)) {
-					print.redLine("Version was not specified for #dep.groupId#:#dep.artifactId#, finding latest release version.");
+					if (arguments.verbose) {
+						print.yellowLine("Version was not specified for #dep.groupId#:#dep.artifactId#, finding latest release version.");
+					}
 					depData = mavenClient.getArtifactMetadata(dep.groupId, dep.artifactId);
 					if (len(depData.versioning.release)) {
 						dep.version = depData.versioning.release;
