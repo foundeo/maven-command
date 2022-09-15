@@ -43,3 +43,9 @@ If you want to specify an exact version, then use:
 		</dependencies>
 	</project>
 
+## Known Issues
+
+There are some unresolved issues pulling in nested dependencies, in those cases you may have to install maven and run the `mvn` tool directly:
+
+    mvn dependency:copy-dependencies -DoutputDirectory=lib/
+    
